@@ -12,12 +12,10 @@ var global_senhas = false;
 var global_scrolling = false;
 var animation_speed = 400;
 var is_play = false;
-var stop_recursion = false;
 
 
 var global_currentAudio = 1;
 var audio_element = false;
-var global_minAudio = 1;
 var global_maxAudio = 0;
 
 var audio_queue = [];
@@ -32,6 +30,11 @@ var video_extension = '.mp4';
 
 var text_slides = [4,10];
 
+
+/*
+ This function provides the main functionality of the book, changing the slide.
+ Given a slide number the function does the scrolling and resets the state of the book
+ */
 function goToSlide(slideNo){
     if(slideNo >= global_minSlide && slideNo <= global_maxSlide){
         $('html, body').stop().animate({scrollTop:$('#slide-'+slideNo).offset().top - contentOffset}, animation_speed, 'swing', function() {
@@ -68,6 +71,10 @@ function goToSlide(slideNo){
     }
 }
 
+
+/*
+  Used to return the current language prefix used in file storage
+ */
 function getLangFilesPrefix(){
     var audioPrefix = '';
     switch (global_lang){
@@ -81,16 +88,29 @@ function getLangFilesPrefix(){
     return audioPrefix;
 }
 
+
+/*
+    Used to check if an answer was marked as a right answer.
+ */
 function isRight(element){
     var data = element.data('is-right');
     return data === true;
 }
 
+
+/*
+    Used to check if an answer was marked as exclusive.
+    An exclusive answer is one that admits only 1 right answer.
+ */
 function isExclusive(element){
     var data = element.data('is-exclusive');
     return data === true;
 }
 
+/*
+    This function is used to initialize the book.
+    It numbers the slides in ascending order using their id property.
+ */
 function startUp(){
     var counter = 0;
     $('.slide').each(function(){
@@ -108,6 +128,11 @@ function startUp(){
     $('#var-last_slide_number').html(global_maxSlide);
     goToSlide(global_currentSlide);
 }
+
+
+/*
+    Changes the state of the book to simplified language.
+ */
 function setSimple(setVal){
     if(setVal){
         $(".select-simple").fadeTo("fast", 1);
@@ -122,6 +147,11 @@ function setSimple(setVal){
     }
     goToSlide(global_currentSlide);
 }
+
+
+/*
+    Changes the state of the book to enable or disable audio narration
+ */
 function setAudio(setVal){
     if(setVal){
         if(!is_play){
@@ -135,6 +165,10 @@ function setAudio(setVal){
     }
     goToSlide(global_currentSlide);
 }
+
+/*
+    Changes the state of the book to enable or disable sign language video.
+ */
 function setSenhas(setVal){
     if(global_lang!='guarani'){
         if(setVal){
@@ -153,6 +187,10 @@ function setSenhas(setVal){
     }
     goToSlide(global_currentSlide);
 }
+
+/*
+    Changes the language of the book
+ */
 function setLang(lang){
     switch (lang){
         case 'guarani':
@@ -188,84 +226,83 @@ function setLang(lang){
     //alert('lang set = ' + global_lang);
 }
 
+/*
+    Returns the jQuery element of the current shown slide.
+ */
 function getCurrentSlide(){
     return $('#slide-' + global_currentSlide);
 }
 
-function UrlExistsAudio(url)
-{
-    audio = new Audio(url);
-}
-
-function UrlExistsVideo(url)
-{
-    audio = new Video(url);
-}
-
-function UrlExists(asd){
-    return true;
-}
-
+/*
+    This function holds the main logic to the automatic playing of audio and video.
+ */
 // Auto read
 function playNextAudio(){
     var video = document.getElementById("video-ls");
+
+    // Ending condition for a slide, if the queue is empty or if the last element was on pause.
     if(audio_queue[0] === 'end'){
         if(audio_element){
             audio_element.play();
             video.play();
         }
         return;
-    } //end condition
+    }
 
+
+    // If there is already an audio loaded.
     if(audio_element) {
         audio_element.play();
         video.play();
     }else{
-        //video
+
         var videoUrl = video_assets_dir + 'slide-' + global_currentSlide + '/' + 'video-' + global_currentAudio + video_extension;
 
-        console.log(video);
-        if(UrlExists(videoUrl)) {
-            if((text_slides.includes(global_currentSlide) ) && global_currentAudio > 1  ) {
-
-            }else{
-                $(video).find('source').attr('src', videoUrl);
-                video.load();
-                video.play();
-            }
+        // If video from the slide is decoupled from the audio.
+        if((text_slides.includes(global_currentSlide) ) && global_currentAudio > 1  ) {
+            //don't play next video
+        }else{
+            $(video).find('source').attr('src', videoUrl);
+            video.load();
+            video.play();
         }
 
-        // a
         var audioUrl;
+
+        //Getting the correct audio url according to if audio is simplified.
         if(text_slides.includes(global_currentSlide) && global_simple){
             audioUrl = '' + audio_assets_dir + getLangFilesPrefix() + 'slide-' + global_currentSlide + '/' + 'audio-' + global_currentAudio + '-ts' + audio_extension;
         }else{
             audioUrl = '' + audio_assets_dir + getLangFilesPrefix() + 'slide-' + global_currentSlide + '/' + 'audio-' + global_currentAudio + audio_extension;
         }
-        var audio;
-        audio = new Audio(audioUrl);
-        var localcurrentaudio = global_currentAudio;
-        console.log(audio);
+
+        var audio = new Audio(audioUrl);
+        var localCurrentAudio = global_currentAudio;
+
         audio.onerror = function(){
             audio_element.pause();
-            var audio = new Audio(audio_assets_dir + 'slide-' + global_currentSlide + '/' + 'audio-' + localcurrentaudio + audio_extension);
+            var audio = new Audio(audio_assets_dir + 'slide-' + global_currentSlide + '/' + 'audio-' + localCurrentAudio + audio_extension);
             audio.play();
             audio_element = audio;
         };
 
         audio.play();
         audio_element = audio;
-        console.log(audio_queue);
+
         var item = audio_queue.shift();
         var currentSlide = getCurrentSlide();
+
+        // Used to automatically scroll elements on audio narration
         var scrollableItem = currentSlide.find('.scrollable');
         if(scrollableItem.length > 0 && item.parents('.scrollable').length > 0){
-        //if( - scrollableItem[0].scrollTop + item.position().top > 250)
             scrollableItem[0].scrollTop = item.position().top - scrollableItem.height()/2;
         }
+
         item.addClass('read-selected');
         audio_queue.push(item);
         global_currentAudio++;
+
+            //This functions enable the automatic reproduction of audio and video
             video.onended = function(){
                 if(audio_element.paused){
                     item.removeClass('read-selected');
@@ -284,6 +321,9 @@ function playNextAudio(){
     }
 }
 
+/*
+    Returns the audio and queue to a previous position and then plays the next audio.
+*/
 function playPreviousAudio(){
     var video = document.getElementById("video-ls");
     if(audio_element){
@@ -319,6 +359,11 @@ function playPreviousAudio(){
         playNextAudio();
 }
 
+
+
+/*
+    Skills the current audio element in the queue and then plays next audio.
+ */
 function skipAudio(){
     if(audio_element){
         audio_element.pause();
@@ -332,6 +377,9 @@ function skipAudio(){
         playNextAudio();
 }
 
+/*
+    Pauses the audio and video reproduction.
+ */
 function stopAudio(){
     // audio
     if(audio_element){
@@ -343,20 +391,19 @@ function stopAudio(){
     video.pause();
 }
 
+
+
 $(function() {
 
 
-    //CONTROLS
+    //UI CONTROLS ----------------------------------------------------
     $(document).on( "click", "#next-slide", function(){
         goToSlide(global_currentSlide+1);
     });
-    $(document).on( "click", "#prev-slide", function(){
-        goToSlide(global_currentSlide-1);
-    });
-    $(document).on( "click", "#prev-slide", function(){
-        goToSlide(global_currentSlide-1);
-    });
 
+    $(document).on( "click", "#prev-slide", function(){
+        goToSlide(global_currentSlide-1);
+    });
 
     $(window).bind('mousewheel DOMMouseScroll', function(event){
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
@@ -375,28 +422,35 @@ $(function() {
         }
     });
 
-    //SLIDE 1
-    $(document).on( "click", "#select-spanish", function(){
-        //goToSlide(global_currentSlide+1);
-        setLang('spanish');
-    });
-    $(document).on( "click", "#select-guarani", function(){
-        //goToSlide(global_currentSlide+1);
-        setLang('guarani');
-    });
-
-    //SLIDE 2
     $(document).on( "click", ".select-simple", function(){
         setSimple(!global_simple);
     });
+
     $(document).on( "click", ".select-audio", function(){
         setAudio(!global_audio);
     });
+
     $(document).on( "click", ".select-senhas", function(){
         setSenhas(!global_senhas);
     });
 
-    // SLIDE 3
+    $("#go-home").click(function (e) {
+        goToSlide(1);
+    });
+
+    //UI CONTROLS ----------------------------------------------------
+
+    //SLIDE 1 --------------------------------------------------------
+    $(document).on( "click", "#select-spanish", function(){
+        setLang('spanish');
+    });
+    $(document).on( "click", "#select-guarani", function(){
+        setLang('guarani');
+    });
+    //SLIDE 1 --------------------------------------------------------
+
+
+    // SLIDE 3 -------------------------------------------------------
     $("#area_nina").mouseenter(function (e) {
         $('#js-nina').css("opacity","0.6");
         $('.custom-animation-selector').removeClass('custom-animation-1');
@@ -510,12 +564,12 @@ $(function() {
         video.play();
     });
 
+    //Calls plugin imageMapResize in order to keep the image map consistent between different resolutions.
+    $('map').imageMapResize();
 
-    $("#go-home").click(function (e) {
-        goToSlide(1);
-    });
+    // SLIDE 3 -------------------------------------------------------
 
-
+    // Global functionality ------------------------------------------
     $(".scroll-up").click(function (e) {
         $(this).siblings('.scrollable').animate({
             scrollTop: '-=200px'
@@ -528,9 +582,6 @@ $(function() {
         });
     });
 
-    $('map').imageMapResize();
-
-    // Ejercicio 1
     $(document).on( "click", ".js-ejercicio", function(){
         if(isExclusive($(this))){
             $(this).closest('.js-ejercicio-parent').find('.js-ejercicio').removeClass('ejercicio-correct').removeClass('ejercicio-incorrect');
@@ -546,9 +597,64 @@ $(function() {
         }
     });
 
+    // Keyboard control
+    $(document).keydown(function(e) {
+        switch(e.which) {
+            case 32: // left
+                $('#play-pause').click();
+                break;
+
+            case 37: // left
+                $('#prev-slide').click();
+                break;
+
+            case 38: // up
+                $('#prev-action').click();
+                break;
+
+            case 39: // right
+                $('#next-slide').click();
+                break;
+
+            case 40: // down
+                $('#next-action').click();
+                break;
+
+            case 74: // J
+            case 106: // j
+                $('.read-selected').click();
+                break;
+
+            default: return; // exit this handler for other keys
+        }
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+    });
+
+    // Auto read
+    $(document).on( "click", "#prev-action", function(){
+        playPreviousAudio();
+    });
+
+    $(document).on( "click", "#next-action", function(){
+        skipAudio();
+    });
+
+    $(document).on( "click", "#play-pause", function(){
+        if(is_play){
+            $(this).find('.js-play').show();
+            $(this).find('.js-pause').hide();
+            stopAudio();
+        }else{
+            $(this).find('.js-play').hide();
+            $(this).find('.js-pause').show();
+            playNextAudio();
+        }
+        is_play = !is_play;
+    });
+    // Global functionality ------------------------------------------
 
 
-    // Clase 3, Ejercicio 3
+    // Slide 20 Drag and drop task. ----------------------------------
 
     function dragMoveListener (event) {
         var target = event.target;
@@ -561,7 +667,7 @@ $(function() {
             target.style.transform =
                 'translate(' + x + 'px, ' + y + 'px)';
 
-        // update the posiion attributes
+        // update the position attributes
         target.setAttribute('data-x', x);
         target.setAttribute('data-y', y);
     }
@@ -570,7 +676,7 @@ $(function() {
     interact('.dropzone').dropzone({
         // only accept elements matching this CSS selector
         accept: '.interact-ejercicio-3',
-        // Require a 75% element overlap for a drop to be possible
+        // Require a 50% element overlap for a drop to be possible
         overlap: 0.5,
 
         // listen for drop related events:
@@ -632,16 +738,10 @@ $(function() {
             // dragMoveListener from the dragging demo above
             onmove: dragMoveListener
         });
+    // Slide 20 Drag and drop task. ----------------------------------
 
 
-
-    // Ejercicio memoria
-
-
-
-    // START UP
-    startUp();
-
+    // Slide 15 Memory task. ----------------------------------
     function removeIncorrectClasses(element1, element2){
         element1.removeClass('ejercicio-incorrect');
         element2.removeClass('ejercicio-incorrect');
@@ -677,64 +777,12 @@ $(function() {
             }
         }
     });
+    // Slide 15 Memory task. ----------------------------------
 
 
-    // Auto read
-    $(document).on( "click", "#prev-action", function(){
-        playPreviousAudio();
-    });
+    // START UP
+    startUp();
 
-    $(document).on( "click", "#next-action", function(){
-        skipAudio();
-    });
-
-    $(document).on( "click", "#play-pause", function(){
-        if(is_play){
-            $(this).find('.js-play').show();
-            $(this).find('.js-pause').hide();
-            stopAudio();
-        }else{
-            $(this).find('.js-play').hide();
-            $(this).find('.js-pause').show();
-            playNextAudio();
-        }
-        is_play = !is_play;
-    });
-
-
-    //botones control
-    $(document).keydown(function(e) {
-        switch(e.which) {
-            case 32: // left
-                $('#play-pause').click();
-                break;
-
-            case 37: // left
-                $('#prev-slide').click();
-                break;
-
-            case 38: // up
-                $('#prev-action').click();
-                break;
-
-            case 39: // right
-                $('#next-slide').click();
-                break;
-
-            case 40: // down
-                $('#next-action').click();
-                break;
-
-            case 74: // J
-            case 106: // j
-                $('.read-selected').click();
-                break;
-
-            default: return; // exit this handler for other keys
-        }
-        e.preventDefault(); // prevent the default action (scroll / move caret)
-    });
-
-
+    // Start audio at startup
     playNextAudio();
 });
