@@ -8,11 +8,11 @@ Copy the proyect files into a readable folder in your system.
 
 ## Usage
 
-To open the proyect just excecute the book.xhtml file located in the root foulder of the proyect.
+To open the project just execute the book.xhtml file located in the root folder of the project, with the chrome browser.
 
-## Proyect objective
+## Project objective
 
-The final objective of the proyect is to test the implemantation of accesible books, using (on the first stage) the browser Google Chrome as a reader.
+The final objective of the project is to test the implementation of accessible books, using (on the first stage) the browser Google Chrome as a reader.
 
 ## Technology rundown
 
