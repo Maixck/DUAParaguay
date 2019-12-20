@@ -1,0 +1,2089 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html >
+<html xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:epub="http://www.idpf.org/2007/ops"
+      xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link href="assets/css/book.css"	rel="stylesheet" type="text/css" />
+    <!--<link href="assets/css/animate.css"	rel="stylesheet" type="text/css" />-->
+    <link href="assets/bootstrap-4.3.1-dist/css/bootstrap.min.css"	rel="stylesheet" type="text/css" />
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/interact.min.js"></script>
+    <script src="assets/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/imageMapResizer.min.js"></script>
+
+    <script src="assets/js/book.js"></script>
+
+    <title>Porta Aberta Ciências Humanas e da Natureza, 1º ano</title>
+    <dc:creator>Miguel Centurión, Arsis S.A.</dc:creator>
+    <dc:title>Plan piloto de libro accesible</dc:title>
+    <dc:identifier></dc:identifier>
+    <dc:date>2019-08-22</dc:date>
+    <dc:publisher></dc:publisher>
+    <meta property="dtb:narrator"></meta>
+    <meta property="dtb:producer"></meta>
+    <meta charset="utf-8" />
+</head>
+
+
+<body epub:type="bodymatter" class="bg-w">
+    <nav class="navbar navbar-expand navbar-light main-navbar bg-w">
+        <h2 class="main-title"><span class="js-lang-controlled" data-lang-spanish="Unidad" data-lang-guarani="Mbo’epyaty">Unidad</span> <span class="no-effect-script" id="var-unit_number">7 </span></h2><span class="ml-3" style="color:#c4c4c4;font-family: Asap-Bold;font-size:2.5rem; margin-top: -0.8rem;"> > </span>
+        <h2 class="font-weight-normal ml-3" ><span class="no-effect-script" id="var-unit_title"><i><span class="js-lang-controlled" data-lang-spanish="El agua es vida" data-lang-guarani="Y rupi ñanderekove">El agua es vida</span></i></span></h2>
+
+    </nav>
+    <nav class="navbar navbar-expand navbar-light bottom-navbar bg-w">
+        <div class="col-4 flex-center-all h-100">
+            <button type="button" class="select-senhas btn btn-small p-0"><img class="h-100" src="assets/img/btn-senhas.png"/></button>
+            <button type="button" class="select-simple btn btn-small p-0 ml-4"><img class="h-100" src="assets/img/btn-simple.png"/></button>
+            <button type="button" class="select-audio  btn btn-small p-0 ml-4"><img class="h-100" src="assets/img/btn-audio.png"/></button>
+        </div>
+
+        <div class="col-4 flex-center-all h-100">
+            <button id="prev-slide" class="btn btn-small p-0">
+                <img src="assets/img/prev-arrow.png" class="h-100" />
+            </button>
+            <button id="prev-action" class="btn btn-small p-0 ml-4">
+                <img src="assets/img/previous-item.png" />
+            </button>
+            <button id="play-pause" class="btn btn-small p-0 ml-3">
+                <img src="assets/img/play.png"  class="h-100 js-play" />
+                <img src="assets/img/pause.png" class="h-100 js-pause" style="display:none"/>
+            </button>
+            <button id="next-action" class="btn btn-small p-0 ml-3">
+                <img src="assets/img/next-item.png" />
+            </button>
+            <button id="next-slide" class="btn btn-small p-0 ml-4">
+                <img src="assets/img/next-arrow.png" class="h-100" />
+            </button>
+        </div>
+
+        <div class="col-4 flex-center-all h-100">
+            <span class="ml-4"><span class="js-lang-controlled" data-lang-spanish="Página" data-lang-guarani="Togue">Página</span>: </span>
+            <span class="no-effect-script ml-3" id="var-slide_number">1</span> / <span class="no-effect-script" id="var-last_slide_number">20</span>
+            <button id="go-home" class="btn btn-small p-0 ml-4">
+                <img src="assets/img/home-75.png" class="h-100" />
+            </button>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="row main-row">
+            <div class="col-9 main-display">
+
+                <div class="slide">
+                    <div class="container">
+                        <div class="w-100 h-100 flex-center-all">
+                            <div class="centered-container">
+                                <div class="col-12 flex-center-all mb-5 js-read-auto">
+                                    <button type="button" id="select-spanish" class="js-read-auto btn btn-primary btn-red btn-xl mr-4">Castellano</button>
+                                    <button type="button" id="select-guarani" class="js-read-auto btn btn-primary btn-blue btn-xl">Guaraní</button>
+                                </div>
+                                <div class="col-12 flex-center-all">
+                                    <div class="d-inline-block">
+                                        <button type="button"  class="select-senhas btn js-read-auto"><img class="img-max-2" src="assets/img/btn-senhas.png"/></button>
+                                        <h4 class="text-center">
+                                            <span class="js-lang-controlled" data-lang-spanish="Lengua de señas" data-lang-guarani="Ñe'e señapegua">Lengua de señas</span>
+                                        </h4>
+                                    </div>
+                                    <div class="d-inline-block ml-3">
+                                        <button type="button"  class="select-simple btn js-read-auto"><img class="img-max-2" src="assets/img/btn-simple.png"/></button>
+                                        <h4 class="text-center">
+                                            <span class="js-lang-controlled" data-lang-spanish="Lenguaje simple" data-lang-guarani="Ñe'e simple">Lenguaje simple</span>
+                                        </h4>
+                                    </div>
+                                    <div class="d-inline-block ml-3">
+                                        <button type="button"  class="select-audio btn js-read-auto" ><img class="img-max-2" src="assets/img/btn-audio.png"/></button>
+                                        <h4 class="text-center">
+                                            <span class="js-lang-controlled" data-lang-spanish="Audio" data-lang-guarani="Ñehendu">Audio</span>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="row pl-3 h-100 js-read-auto">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title js-lang-controlled lang-spanish">
+                                    Clase N° 1
+                                </div>
+                                <div class="info-title js-lang-controlled lang-guarani">
+                                    Mbo’epy petëiha
+                                </div>
+                                <div class="info-body">
+                                    <p class="js-lang-controlled lang-spanish">
+                                        1. En esta clase leeremos un cuento.
+                                    </p>
+                                    <p class="js-lang-controlled lang-spanish">
+                                        2. Identificaremos palabras que contengan la letra G y realizaremos actividades.
+                                    </p>
+                                    <p class="js-lang-controlled lang-guarani">
+                                        Mba’épa ojehupytese:<br/>
+                                        ko mbo’epýpe jaikuaáta:<br/>
+                                        Tai “g”<br/>
+                                        Ñahendúta mombe’urä, ñaiküimbýta ha jajapóta opa mba’éve jaikuaa haguä mba’éicha javéröpa  jaiporuva’erä ”g”.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100 flex-center-all">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="p-0 h-100">
+                                            <img class="flex-image" src="assets/img/letra-g.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <span class="js-lang-controlled lang-spanish">Actividad 1. Observa la imagen y responde</span><span class="js-lang-controlled lang-guarani">Ejesareko ta’anga rehe ha embohovái:</span>
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        <span class="js-lang-controlled lang-spanish">¿De qué se tratará el cuento?</span><span class="js-lang-controlled lang-guarani">Mba’e rehepa oñe’êta moñe’ërä</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="position-relative p-0 h-100 overflow-hidden">
+                                            <img id="js-flores" src="assets/img/cuento-1/flores.png"        class="img-full custom-animation-selector position-absolute custom-animation-1 infinite"  style="opacity:0;animation-delay: 0.50s;"/>
+                                            <img id="js-nina" src="assets/img/cuento-1/niña.png"            class="img-full custom-animation-selector position-absolute custom-animation-1 infinite"  style="opacity:0;animation-delay: 1s;"/>
+                                            <img id="js-cabana" src="assets/img/cuento-1/cabaña.png"        class="img-full custom-animation-selector position-absolute custom-animation-1 infinite"  style="opacity:0;animation-delay: 1.5s;"/>
+                                            <img id="js-abejas" src="assets/img/cuento-1/abejas.png"        class="img-full custom-animation-selector position-absolute custom-animation-1 infinite"  style="opacity:0;animation-delay: 2s;"/>
+                                            <img id="js-arbol" src="assets/img/cuento-1/arbol.png"          class="img-full custom-animation-selector position-absolute custom-animation-1 infinite"  style="opacity:0;animation-delay: 2.5s;"/>
+                                            <img id="js-arbustos" src="assets/img/cuento-1/arbustos.png"    class="img-full custom-animation-selector position-absolute custom-animation-1 infinite"  style="opacity:0;animation-delay: 3s;"/>
+                                            <img src="assets/img/cuento-1/cuento-1.png"                     class="img-full position-absolute"  style="opacity:0" usemap="#cuento-1-map"/>
+                                            <map name="cuento-1-map" id="cuento-1-map">
+                                                <area shape="poly" coords="494,231,512,242,512,255,503,276,514,275,523,274,524,278,515,282,498,281,485,285,476,288,477,296,488,297,483,303,472,302,467,286,460,282,451,287,435,278,389,280,390,272,442,272,453,275,453,262,463,248,443,233,446,227,470,239,480,233" href="#nothing" id="area_abejas" />
+                                                <area shape="poly" coords="593,281,555,314,567,360,553,427,587,474,587,479,535,471,545,489,541,493,500,471,478,452,455,461,418,468,434,448,414,444,443,426,470,413,494,327,485,286,500,278,512,252,507,238,493,233,478,236,468,243,462,252,406,266,397,244,386,257,353,264,310,234,311,214,335,205,335,188,353,186,338,172,350,153,341,140,359,118,411,72,436,52,475,47,492,44,526,50,532,37,546,38,562,46,586,44,610,56,627,48,666,80,678,76,689,82,690,96,726,103,754,141,760,172,754,198,742,203,743,216,729,251,683,297,604,313,595,301" href="#nothing" id="area_arbol"/>
+                                                <area shape="poly" coords="658,379,692,389,708,399,713,405,707,436,675,445,643,444,605,435,607,426,596,425,603,419,603,403,631,381,646,385" href="#nothing" id="area_arbustos" />
+                                                <area shape="poly" coords="205,452,192,457,194,466,189,470,184,457,172,459,165,460,165,471,156,467,144,475,143,487,150,491,163,486,163,504,182,504,189,491,180,479,199,477,215,470,217,453" href="#nothing" id="area_flores" />
+                                                <area shape="poly" coords="221,311,226,304,236,296,246,290,257,288,268,288,276,291,283,295,296,301,299,309,291,321,292,325,291,332,298,333,299,339,295,344,292,358,284,367,278,370,268,371,268,376,272,378,279,389,286,395,298,422,293,434,294,439,308,446,316,432,321,435,319,444,332,443,332,449,324,453,330,460,329,464,325,464,327,470,323,472,319,470,317,475,313,475,302,460,288,457,299,502,286,510,280,540,295,547,294,558,287,563,258,557,232,550,236,537,236,511,220,502,230,453,219,445,224,428,218,427,223,409,247,382,234,380,225,397,210,402,206,399,188,395,204,387,198,372,179,347,184,325,192,318,191,305,196,296,205,297,214,311" href="#nothing" id="area_nina" />
+                                                <area shape="poly" coords="438,357,458,397,432,397,399,388,381,386,363,394,333,392,324,397,318,397,325,384,352,334,384,344,404,350,409,35" href="#nothing" id="area_cabana" />
+                                            </map>
+                                            <img src="assets/img/cuento-1/cuento-1.png" class="img-full info-container p-0 js-read-auto" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="container simple-lang-on pt-3 pb-3">
+                        <div class="w-100 h-100 flex-center-all">
+                            <div class="centered-container h-100">
+                                <div class="scroll">
+                                    <div class="text-container">
+                                        <h4 class="js-read-auto">
+                                            <span class="js-lang-controlled lang-spanish"><span class="main-title">Actividad 2. Escucha el cuento.</span> La princesa del agua de la vida</span>
+                                            <span class="js-lang-controlled lang-guarani"><span class="main-title">Ejepysaka moñe’êrä.</span> Jarýi y tekove rerekua rehe</span>
+                                        </h4><br/>
+                                        <div class="text-img-container overflow-hidden" >
+                                            <img src="assets/img/cuento-1/rio.png" />
+                                        </div>
+                                        <div class="js-lang-controlled lang-spanish js-read-auto">
+                                            <p class="">Gaby es una niña que vivía en una cabaña en el bosque.</p>
+                                            <p class="">Caminando por el bosque, vio una colmena de abejas y juntó la miel en un frasco.</p>
+                                            <p class="">Pasó por el lugar un duende travieso que empujó el frasco, derramando toda la miel.</p>
+                                            <p class="">Gaby de regreso a su casa, ayudó a unas hormigas a cruzar el camino, levantando una piedra, debajo de la cual brotó una fuente de agua que cura enfermedades. Desde entonces, Gaby se convirtió en la princesa del agua de la vida.</p>
+                                        </div>
+                                        <div class="js-lang-controlled lang-guarani js-read-auto">
+                                            <p class="">Gaby, ha’e mitákuña’ï oikóva peteï Cabañape ka’aguýre.</p>
+                                            <p class="">Oguatávo ka’aguýre, hapépe ojesareko yvyramáta rehe oïha káva raity, upémarö opyta ombyaty eirete peteï mba’yrúpe.</p>
+                                            <p class="">Ohasa upérupi peteï jarýi akahäta itie’ÿva, omyañáva mba’yru ha oñohembaite chugui eirete.</p>
+                                            <p class="">Oguâhëvo hógape, Gaby, oipytyvö tahyikuérape, oipe’ávo ita oïva hapépe. Ohupívo pe ita osë iguýgui yvu, oporomongueráva opa mba’asýgui. Upe guive, Gaby ha’e Jarýi y tekove rerekua.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container simple-lang-off pt-3 pb-3 position-relative">
+                        <div class="w-100 h-100 flex-center-all scrollable scroll5">
+                            <div class="centered-container h-100">
+                                <div class="scroll">
+                                    <div class="text-container">
+                                        <h4 class="js-read-auto">
+                                            <span class="js-lang-controlled lang-spanish"><span class="main-title">Actividad 2. Escucha el cuento.</span> La princesa del agua de la vida</span>
+                                            <span class="js-lang-controlled lang-guarani"><span class="main-title">Ejepysaka moñe’êrä.</span> Jarýi y tekove rerekua rehe</span>
+                                        </h4><br/>
+                                        <div class="text-img-container overflow-hidden" >
+                                            <img src="assets/img/cuento-1/rio.png" />
+                                        </div>
+                                        <div class="js-lang-controlled lang-spanish">
+                                            <p class="js-read-auto">En una solitaria cabaña vivía una pobre niña que se llamaba Gaby. Un día caminando por el bosque Gaby vio una colmena de abejas con abundante miel, y decidió recogerla.</p>
+                                            <p class="js-read-auto">¡Que bueno! - pensó. La llevaré al mercado para venderla y así podré comprar algunas cosas que me hacen falta.</p>
+                                            <p class="js-read-auto">Rápidamente Gaby buscó un frasco y juntó la miel. Ella no sabía que en ese mismo momento un duende travieso trataba de evitar que tuviese éxito.</p>
+                                            <p class="js-read-auto">El duende al ver que Gaby hacía algo útil, corrió al lugar con la intención de causar problemas. Él, se convirtió en una rama ligada a un árbol. Luego empujó el frasco que cayó y se rompió, y así toda la miel se esparció por el suelo.</p>
+                                            <p class="js-read-auto">El duende riéndose se dijo a sí mismo:</p>
+                                            <p class="js-read-auto">- ¡Esto la enfurecerá!</p>
+                                            <p class="js-read-auto">Gaby contempló la miel y pensó:</p>
+                                            <p class="js-read-auto">- “No importa, las hormigas se comerán la miel”. En ese momento vio una hilera de hormiguitas que muy contentas ya estaban probando la miel.</p>
+                                            <p class="js-read-auto">De regreso a su cabaña Gaby vio un gran árbol de mango cargado de frutos maduros.</p>
+                                            <p class="js-read-auto">Entonces dijo:</p>
+                                            <p class="js-read-auto">- ¡Tengo una buena idea! Recogeré muchos mangos y los llevaré a vender al mercado.</p>
+                                            <p class="js-read-auto">El duende travieso nuevamente la siguió hasta el mercado y para que no lo reconociera se transformó en un burro.</p>
+                                            <p class="js-read-auto">Cuando Gaby se sentó para reposar el burro se acercó y se revolcó sobre el cesto de mangos y los machacó sobre el camino. Luego el asno se alejó galopando muy contento entre los arbustos.</p>
+                                            <p class="js-read-auto">Gaby miró las frutas con tristeza. En ese momento, una reina que viajaba hacia el pueblo vio la angustia de la pobre muchacha que perdió todo y se apiadó de ella.</p>
+                                            <p class="js-read-auto">La reina se hizo amiga de Gaby. Para premiar su esfuerzo decidió regalarle una hermosa casita.</p>
+                                            <p class="js-read-auto">Con el tiempo Gaby tuvo su propio almacén donde vendía comida y juguetes.</p>
+                                            <p class="js-read-auto">Pero nuevamente el duende se enfureció y quemó la bodega donde Gaby guardaba todas las mercancías que vendía.</p>
+                                            <p class="js-read-auto">Gaby salió corriendo de su casa cuando olió el humo, y desde lejos contempló el fuego que consumía la bodega con pesar.</p>
+                                            <p class="js-read-auto">De pronto vio a unas hormigas que estaban trasladando su comida desde debajo de la bodega a un lugar más seguro. Para ayudarlas Gaby levantó la piedra que bloqueaba su camino, y debajo de ella brotó una fuente de agua.</p>
+                                            <p class="js-read-auto">Mientras Gaby la probaba, la gente del pueblo se agrupó alrededor de ella y exclamó:</p>
+                                            <p class="js-read-auto">¡El agua de la vida! ¡Esto es lo que ha sido profetizado!</p>
+                                            <p class="js-read-auto">Y le contaron a Gaby la historia de que un día, después de un fuego y muchos desastres, una joven que no se afligiera por las desgracias encontraría una fuente de agua de la vida.</p>
+                                            <p class="js-read-auto">Y así es como Gaby se convirtió en la princesa del agua de la vida, la cual ella aún protege y que se puede beber para curar enfermedades. Incluso el duende travieso bebió del agua y desde ese día fue un amigo fiel de Gaby.</p>
+                                        </div>
+                                        <div class="js-lang-controlled lang-guarani">
+                                            <div class="js-read-auto">
+                                                <p class="">Gaby peteï mitäkuña’ï mboriahumi oikóva ha’eñomi peteï cabañape. Peteï árape, oguatávo ka’aguýre ojesareko yvyramáta ru’ä rehe ha ohecha káva raity osyrypáva eiretégui. </p>
+                                                <p class="">-¡Avy’aitépa! He’i. Ojepy’amongeta – Ko eirete ikatu ahepyme’ë mercadope, upe rire ajogua haguâ umi mba’e aikotevéva.</p>
+                                                <p class="">Pya’éko ojeporeka peteï mba’yru rehe ha ombyaty eirete. Ha katu, ha’e noimo’äi oikoha upe rupi peteï jarýi akahätâ, tie’ÿ ombyaiséva chugui hembiapo, ndoipotáigui ogueraha eirete. </p>
+                                            </div>
+                                            <div class="js-read-auto">
+                                                <p class="">Upe jave oñembohasa yvyrarakä ramo, oñemyaña ha oity ichugui eirete ryru, ojeka ha oñehëmbaite yvýpe eirete poräite ombyaty va’ekue, pe mitäkuña’i.</p>
+                                                <p class="">Pe Jarýi opukakuévo he’i ijupe:</p>
+                                                <p class="">– ¡Kóva ombopochýta ichupe!</p>
+                                                <p class="">Gaby omañávo eirete oñeheva’ekue rehe, he’i ijupe:</p>
+                                                <p class="">– Marave ndoikói, tahýi jepe ho’upáne ko eirete oñehëva’ekue. Upe jave, ohecha tahýikuéra ovy’ajoa oúvo ojoapykuéri ha ho’umahína eirete.</p>
+                                            </div>
+                                            <div class="js-read-auto">
+                                                <p class="">Gaby ohokuévo hógape ohecha peteï mango máta tuichaiterei osaingopáva hi’a  hi’ajupaitémava.</p>
+                                                <p class="">Upémarö he’i:</p>
+                                                <p class="">– ¡Aikuaáma mba’épa ajapóta! Ambyatýta heta mango ha ahepyme’ëta mercadope.</p>
+                                                <p class="">Upépe oï jeýma jarýi akahätä, ohendupaitéva ichupe. Gaby ndohechái jarýipe, oñembohasa rupi vúrro ramo.</p>
+                                                <p class="">Gaby opytu’u’aja, pe vúrro oñeno, ojapajeréi imango atýra ári ha omboykupaite anga ichugui.</p>
+                                            </div>
+                                            <div class="js-read-auto">
+                                                <p class="">Ha’e ohechávo pe oikóva ombyasyeterei. Upe jave, peteï rréina ohovahína távape ohecha imba’embyasy ha opoko upéva ikorasöre.</p>
+                                                <p class="">Pe rréina oñemoangirü Gaby rehe. Ha ohechakuaávo hembiapokue, oñeha’ämbaitehaguére osë haguä tenonde, ome’ë chupe peteï oga’i neporäva.</p>
+                                                <p class="">Ha péicha, uperiremínte, Gaby iñalmacén-makatu ohepyme’ë hi’upyrä ha ñembosarairä.</p>
+                                            </div>
+                                            <div class="js-read-auto">
+                                                <p class="">Jarýi ipochyeterei ohechávo oho poräitereiha Gabype, upévare ohapy ichugui hóga oñongatuhápe umi imba’erepy.</p>
+                                                <p class="">Gaby, ohetüvo tatatï odipara osë upégui ha mombyry guive ohecha mba’éichapa okái, ha oñehundi imba’erepy. </p>
+                                                <p class="">Upejave, ohecha, mba’éichapa tahýikuéra ogueroja hi’upyrä okái mboyve. Gaby ohechávo peteï  itágui ndaikatuiha ohasa hikuái oipe’a chupekuéra hapégui, ohupívo pe ita osë iguýgui yvu.</p>
+                                            </div>
+                                            <div class="js-read-auto">
+                                                <p class="">Gaby hoy’úvo, ojerepa hese genteita ha he’i hikuái:</p>
+                                                <p class="">¡Y rupi ñanderekove! Oikóma katu pe oje’émiva  oikotava’ekue.</p>
+                                                <p class="">Ha omombe’u hikuái Gabype: ymaite ñandeko raka’e oje’eva’ekue oïvove peteï mitäkuña hekovépe ohasa’asýva ojepy’apý’ÿre  ojuhutaha yvu ñande rekovéva. </p>
+                                                <p class="">Upe guive, Gaby ha’e Jarýi  y tekove rerekua , oñangarekóva hese ko’agaite peve. Hasýva hoy’úva upégui katuete okuera.  Pe jarýi iñañava’ekue Gaby ndive hoy’u avei yvúgui ha upeguive iñangirü.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scroll-up btn btn-small p-0 ml-4">
+                            <img src="assets/img/scroll-up.png" class="" />
+                        </button>
+                        <button class="scroll-down btn btn-small p-0 ml-4">
+                            <img src="assets/img/scroll-down.png" class="" />
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    Glosario
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        <span class="js-lang-controlled lang-spanish">Revisa las palabras aprendidas en la clase N° 1.</span><span class="js-lang-controlled lang-spanish"> </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden">
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-3">
+                                                        <div class="ejercicio-image-container no-bg-no-border mr-2">
+                                                            <img class="float-left" src="assets/img/glosario-1/ejercicio-1-1.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="float-left">
+                                                            <div class="js-lang-controlled lang-spanish">
+                                                                <h4 class="mt-4 mb-0 js-read-auto">Cabaña :</h4>
+                                                                <span class="js-read-auto">Casa pequeña, choza.</span>
+                                                            </div>
+                                                            <div class="js-lang-controlled lang-guarani js-read-auto">
+                                                                <h4 class="mt-4 mb-0">Cabaña :</h4>
+                                                                <span class="">Óga’i oïva ka’agy gotyo.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-3">
+                                                        <div class="ejercicio-image-container no-bg-no-border mr-2">
+                                                            <img class="float-left" src="assets/img/glosario-1/ejercicio-1-2.png" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-9">
+                                                        <div class="float-left">
+                                                            <div class="js-lang-controlled lang-spanish">
+                                                                <h4 class="mt-4 mb-0 js-read-auto">Coleta :</h4>
+                                                                <span class="js-read-auto">Mechón de cabello sujeto con un lazo o goma.</span>
+                                                            </div>
+                                                            <div class="js-lang-controlled lang-guarani js-read-auto">
+                                                                <h4 class="mt-4 mb-0">Ohupi iñakärague :</h4>
+                                                                <span class="">Oñapytï iñakarague oiporu moño.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-3">
+                                                        <div class="ejercicio-image-container no-bg-no-border mr-2">
+                                                            <img class="float-left" src="assets/img/glosario-1/ejercicio-1-3.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="float-left">
+                                                            <div class="js-lang-controlled lang-spanish">
+                                                                <h4 class="mt-4 mb-0 js-read-auto">Colmena :</h4>
+                                                                <span class="js-read-auto">Casa de abejas.</span>
+                                                            </div>
+                                                            <div class="js-lang-controlled lang-guarani js-read-auto">
+                                                                <h4 class="mt-4 mb-0">Kava raity:</h4>
+                                                                <span class="">oikóha káva la rréina.</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    Ejercicio 4
+                                </div>
+                                <div class="info-body">
+                                    <p class="js-lang-controlled lang-spanish">
+                                        Escucha y reproduce las palabras que se escriben con la letra G.
+                                    </p>
+                                    <p class="js-lang-controlled lang-guarani">
+                                        Ejapysaka ha emoñe’ë ñe’ënguéra ogueraháva G-g.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 overflow-hidden row js-lang-controlled lang-spanish">
+                                            <div class="col-6 p-0 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-3 js-read-auto">
+                                                        <img class="" src="assets/img/ejercicio-1/imagen-4.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        agua
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-0 d-flex justify-content-center">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-3 js-read-auto">
+                                                        <img class="" src="assets/img/ejercicio-1/imagen-1.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        Gaby
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-0 mt-4 d-flex justify-content-center">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-3 js-read-auto">
+                                                        <img class="" src="assets/img/ejercicio-1/imagen-2.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        hormiguita
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-0 mt-4 d-flex justify-content-center">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-3 js-read-auto">
+                                                        <img class="" src="assets/img/ejercicio-1/imagen-3.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        mango
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info-cuento mh-100 overflow-hidden row js-lang-controlled lang-guarani">
+                                            <div class="col-6 p-0 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-3 js-read-auto">
+                                                        <img class="" src="assets/img/cab1-28.png" style="width:190px;height: 190px" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        óga
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-0 d-flex justify-content-center">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-3 js-read-auto">
+                                                        <img class="" src="assets/img/ejercicio-1/imagen-1.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        Gaby
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-0 mt-4 d-flex justify-content-center">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-3 js-read-auto">
+                                                        <img class="" src="assets/img/ejercicio-1/imagen-2.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        oguata
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    Ejercicio 5
+                                </div>
+                                <div class="info-body">
+                                    <p class="js-lang-controlled lang-spanish">
+                                        Selecciona las palabras que contengan G.
+                                    </p>
+                                    <p class="js-lang-controlled lang-guarani">
+                                        Eiporavo umi ñe’ë ogueraháva g.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row js-ejercicio-parent js-lang-controlled lang-spanish">
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        goma
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto">
+                                                        mesa
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto">
+                                                        perro
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        guiso
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        gusano
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        Gaby
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row js-ejercicio-parent js-lang-controlled lang-guarani">
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        góma
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto">
+                                                        mesa
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        jagua
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        guiso
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto">
+                                                        yso
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <button class="ejercicio-text-container mr-2 ejercicio-btn js-ejercicio js-read-auto" data-is-right="true">
+                                                        Gaby
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4">
+                                <div class="info-title js-read-auto js-lang-controlled lang-spanish">
+                                    Clase N° 2
+                                </div>
+                                <div class="info-title js-read-auto js-lang-controlled lang-guarani">
+                                    Clase moKóiha
+                                </div>
+                                <div class="info-body js-read-auto js-lang-controlled lang-spanish">
+                                    <p class="">
+                                        1. En esta clase leeremos un texto informativo.
+                                    </p>
+                                    <p class="">
+                                        2. Reconoceremos la palabra de uso frecuente "<b>para</b>" y realizaremos actividades.
+                                    </p>
+                                </div>
+                                <div class="info-body js-read-auto js-lang-controlled lang-guarani">
+                                    <p class="">
+                                        1. En esta clase leeremos un texto informativo.
+                                    </p>
+                                    <p class="">
+                                        2. Reconoceremos la palabra de uso frecuente "<b>para</b>" y realizaremos actividades.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100 flex-center-all">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="p-0 h-100">
+                                            <img src="assets/img/para-01.png" class="img-full"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    Observa las imágenes y responde a la siguiente pregunta
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        ¿Dónde encontraremos agua?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto">
+                                                        <img class="mw-100" src="assets/img/agua-1/hielo.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        Hielo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/agua-1/pozo.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        Pozo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/agua-1/grifo.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        Grifo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/agua-1/nube.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        Nube
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/agua-1/pava.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        Pava
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100 mt-3" src="assets/img/agua-1/rio.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        Río
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="container simple-lang-on pt-3 pb-3">
+                        <div class="w-100 h-100 flex-center-all">
+                            <div class="centered-container h-100">
+                                <div class="scroll">
+                                    <div class="text-container">
+                                        <h4 class="js-read-auto"><span class="main-title">Escucha el texto informativo.</span> El agua y su importancia</h4><br/>
+                                        <div class="js-read-auto">
+                                            <p class="">Todos los seres vivientes necesitan agua para vivir.</p>
+                                            <p class="">Los seres humanos pueden vivir más tiempo sin comida que sin agua.</p>
+                                            <p class="">El agua dulce es apta para beber.</p>
+                                            <p class="">El agua está presente en la Tierra en tres estados: líquido, sólido y gaseoso.</p>
+                                            <p class="">Cuando el agua está líquida la encontramos en ríos, lagos, arroyos, lagunas y océanos. Si está sólida en forma de hielo, nieve, granizo. Y en su estado gaseoso cuando el agua hierve, se evapora y queda en el aire.</p>
+                                            <p class="">El agua se usa en la agricultura, en las industrias, para combatir incendios, para trasportar embarcaciones, para generar electricidad, para cocinar, beber, lavar, regar y otros. Por eso, debemos de cuidar el agua y no contaminarla. ¡No existe vida sin agua!.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container simple-lang-off pt-3 pb-3 position-relative">
+                        <div class="w-100 h-100 flex-center-all scrollable scroll5">
+                            <div class="centered-container h-100">
+                                <div class="scroll">
+                                    <div class="text-container">
+                                        <h4 class="js-read-auto"><span class="main-title">Escucha el texto informativo.</span> El agua y su importancia</h4><br/>
+                                        <p class="js-read-auto">Todos los seres vivientes necesitan agua para vivir. El 70% del cuerpo humano está formado por agua. Gracias al agua podemos digerir la comida, mantener la temperatura de nuestro cuerpo y deshacernos de los desperdicios a través de la orina y la materia fecal. Los seres humanos pueden vivir más tiempo sin comida que sin agua.</p>
+                                        <p class="js-read-auto">El agua dulce es apta para beber. De toda el agua que existe en el planeta sólo el uno por ciento es agua dulce.</p>
+                                        <p class="js-read-auto">El agua está presente en la Tierra en tres estados: líquido, sólido y gaseoso. Cuando el agua está líquida la encontramos en ríos, lagos, arroyos, lagunas y océanos.</p>
+                                        <p class="js-read-auto">Cuando el agua se congela por efecto del frío se vuelve sólida. Ejemplo: hielo, nieve, granizo.</p>
+                                        <p class="js-read-auto">El agua también se encuentra en forma de gas. Cuando se calienta se evapora y queda en el aire.</p>
+                                        <p class="js-read-auto">El aire que respiramos también contiene agua. Las plantas a través de sus hojas arrojan vapor de agua que luego nosotros respiramos.</p>
+                                        <p class="js-read-auto">El agua se usa en las industrias, en la agricultura, para combatir incendios, para transportar embarcaciones, para generar electricidad, para cocinar, beber, lavar y regar.</p>
+                                        <p class="js-read-auto">Por eso debemos de cuidar el agua y no contaminarla. ¡No existe vida sin agua!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scroll-up btn btn-small p-0 ml-4">
+                            <img src="assets/img/scroll-up.png" class="" />
+                        </button>
+                        <button class="scroll-down btn btn-small p-0 ml-4">
+                            <img src="assets/img/scroll-down.png" class="" />
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    Glosario
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Revisa las palabras aprendidas en la clase N° 2.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden">
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-4">
+                                                        <div class="ejercicio-image-container p-0 no-bg-no-border overflow-hidden" style="max-width: 150px">
+                                                            <img class="float-left" src="assets/img/glosario-2/contaminar.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-8">
+                                                        <div class="float-left js-read-auto">
+                                                            <h4 class="mt-4 mb-0">Contaminar :</h4>
+                                                            Ensuciar con basuras.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-4">
+                                                        <div class="ejercicio-image-container p-0 no-bg-no-border">
+                                                            <img class="float-left" src="assets/img/glosario-2/digerir.png" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-8">
+                                                        <div class="float-left js-read-auto">
+                                                            <h4 class="mt-4 mb-0">Digerir :</h4>
+                                                            Transformar alimentos en sustancias útiles para el cuerpo.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 3-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Selecciona una de las siguientes palabras [ <b>para - con - y</b> ] para completar las oraciones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row w-100">
+                                            <div class="col-8 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-12 js-read-auto">
+                                                        <!--<div class="row p-1">-->
+                                                            El agua sirve...
+                                                            <span class="ml-2">
+                                                                <!--<img src="assets/img/ui-button-67.png" />-->
+                                                            </span>
+                                                        <!--</div>-->
+                                                    </div>
+                                                    <div class="col-12 mt-4 js-ejercicio-parent">
+                                                        <div class="row">
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                                para
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                y
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                con
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center js-read-auto">
+                                                <img xmlns="http://www.w3.org/1999/xhtml" class="img-max-2" src="assets/img/clase-2/ejercicio-1/cocinar.png" />
+                                            </div>
+
+                                            <div class="col-8 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-12 js-read-auto">
+                                                        <!--<div class="row p-1">-->
+                                                        El agua sirve...
+                                                            <span class="ml-2">
+                                                                <!--<img src="assets/img/ui-button-67.png" />-->
+                                                            </span>
+                                                        <!--</div>-->
+                                                    </div>
+                                                    <div class="col-12 mt-4 js-ejercicio-parent">
+                                                        <div class="row">
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                y
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                con
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                                para
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center js-read-auto">
+                                                <img xmlns="http://www.w3.org/1999/xhtml" class="img-max-2" src="assets/img/clase-2/ejercicio-1/lavar.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 3-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Selecciona una de las siguientes palabras [ <b>para - con - y</b> ] para completar las oraciones.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-8 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-12 js-read-auto">
+                                                        <!--<div class="row p-1">-->
+                                                            El agua sirve...
+                                                            <span class="ml-2">
+                                                                <!--<img src="assets/img/ui-button-67.png" />-->
+                                                            </span>
+                                                        <!--</div>-->
+                                                    </div>
+                                                    <div class="col-12 mt-4 js-ejercicio-parent">
+                                                        <div class="row">
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                y
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                                para
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                con
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center js-read-auto">
+                                                <img xmlns="http://www.w3.org/1999/xhtml" class="img-max-2" src="assets/img/clase-2/ejercicio-1/bano.png" />
+                                            </div>
+
+                                            <div class="col-8 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-12 js-read-auto">
+                                                        <!--<div class="row p-1">-->
+                                                        El agua sirve...
+                                                            <span class="ml-2">
+                                                                <!--<img src="assets/img/ui-button-67.png" />-->
+                                                            </span>
+                                                        <!--</div>-->
+                                                    </div>
+                                                    <div class="col-12 mt-4 js-ejercicio-parent">
+                                                        <div class="row">
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                con
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                                y
+                                                            </button>
+                                                            <button class="ejercicio-text-container-small mr-2 js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                                para
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center js-read-auto">
+                                                <img xmlns="http://www.w3.org/1999/xhtml" class="img-max-2" src="assets/img/clase-2/ejercicio-1/regar.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 4-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        1. Selecciona la imagen que representa la emoción que te produjo tu experiencia con el agua.
+                                    </p>
+                                    <!--<p class="">-->
+                                        <!--2. Dibuja o relata tu experiencia con el agua.-->
+                                    <!--</p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-0 overflow-hidden row js-ejercicio-parent css-emojis">
+                                            <div class="col-6 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100 js-read-auto">
+                                                    <button class="ejercicio-image-container js-ejercicio ejercicio-btn" data-is-exclusive="true" data-is-right="true">
+                                                        <img class="float-left" src="assets/img/clase-2/ejercicio-2/alegria.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        alegría
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100 js-read-auto">
+                                                    <button class="ejercicio-image-container js-ejercicio ejercicio-btn" data-is-exclusive="true" data-is-right="true">
+                                                        <img class="float-left" src="assets/img/clase-2/ejercicio-2/sorpresa.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        sorpresa
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100 js-read-auto">
+                                                    <button class="ejercicio-image-container js-ejercicio ejercicio-btn" data-is-exclusive="true" data-is-right="true">
+                                                        <img class="float-left" src="assets/img/clase-2/ejercicio-2/tristeza.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        tristeza
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100 js-read-auto">
+                                                    <button class="ejercicio-image-container js-ejercicio ejercicio-btn" data-is-exclusive="true" data-is-right="true">
+                                                        <img class="float-left" src="assets/img/clase-2/ejercicio-2/temor.png" />
+                                                    </button>
+                                                    <div class="col-12 text-center">
+                                                        temor
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 5-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Encuentra el par de las imágenes.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row js-ejercicio-memoria">
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/1.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/2.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/3.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/4.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/4.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/3.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/2.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <button class="ejercicio-image-container p-2 js-ejercicio-item js-read-auto">
+                                                        <img class="w-100" src="assets/img/clase-2/ejercicio-3/1.png" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4">
+                                <div class="info-title js-read-auto">
+                                    Clase N° 3
+                                </div>
+                                <div class="info-body">
+                                    <div class="js-read-auto">
+                                        <p class="">
+                                            1. En esta clase aprenderemos sobre un texto instruccional
+                                        </p>
+                                        <p class="">
+                                            2. Reconoceremos palabras que contengan las sílabas  ga - gue - gui - go - gu en palabras.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento h-100 p-2 overflow-hidden row">
+                                            <img src="assets/img/clase-3/gagueguigogu-01.png" class="img-full"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    Observa las imágenes y responde.
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        ¿Qué haríamos con estos elementos?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto">
+                                                        <img class="mw-100" src="assets/img/clase-3/materiales/image-50.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        bandeja
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 mt-10">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/clase-3/materiales/image-54.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        hielo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/clase-3/materiales/image-51.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        cacerola
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/clase-3/materiales/image-52.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        calentador
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 offset-4">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto ">
+                                                        <img class="mw-100" src="assets/img/clase-3/materiales/image-53.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        agua hirviendo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="container pt-3 pb-3 position-relative">
+                        <div class="w-100 h-100 flex-center-all scrollable scroll5">
+                            <div class="centered-container h-100">
+                                <div class="scroll">
+                                    <div class="text-container p-2">
+                                        <h4 class="js-read-auto"><span class="main-title">Escucha el texto instruccional.</span> Experimento: Ciclo del agua.</h4><br/>
+                                        <div class="info-container p-4" style="background-color: #ffffff;text-align: center">
+                                            <div class="info-title js-read-auto">
+                                                Materiales:
+                                            </div>
+                                        </div>
+                                        <div class="js-read-auto">
+
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container-small mr-2 no-bg-no-border">
+                                                        <img class="float-left" src="assets/img/clase-3/materiales/image-50.png" />
+                                                    </div>
+                                                    <div class="float-left ml-4 mt-1">
+                                                        1 bandeja de aluminio o metal
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container-small mr-2 no-bg-no-border">
+                                                        <img class="float-left" src="assets/img/clase-3/materiales/image-51.png" />
+                                                    </div>
+
+                                                    <div class="float-left ml-4 mt-1">
+                                                        1 Cacerola
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container-small mr-2 no-bg-no-border">
+                                                        <img class="float-left" src="assets/img/clase-3/materiales/image-52.png" />
+                                                    </div>
+                                                    <div class="float-left ml-4 mt-1">
+                                                        1 Calentador
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container-small mr-2 no-bg-no-border">
+                                                        <img class="float-left" src="assets/img/clase-3/materiales/image-53.png" />
+                                                    </div>
+                                                    <div class="float-left ml-4 mt-1">
+                                                        1 Litro de agua hirviendo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container-small mr-2 no-bg-no-border">
+                                                        <img class="float-left" src="assets/img/clase-3/materiales/image-54.png" />
+                                                    </div>
+                                                    <div class="float-left ml-4 mt-1">
+                                                        Varios cubos de hielo
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container-small mr-2 no-bg-no-border">
+                                                        <img class="float-left" src="assets/img/clase-3/materiales/image-55.png" />
+                                                    </div>
+                                                    <div class="float-left ml-4 mt-1">
+                                                        2 soportes para las bandejas (cajas)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <!--style="background-color: #ffffff;text-align: center"-->
+                                        <div class="info-container p-4 js-read-auto">
+                                            <div class="info-title">
+                                                Pasos a seguir:
+                                            </div>
+                                            <div class="info-body">
+                                                <p class="">
+                                                    Observación.
+                                                </p>
+                                                <p class="">
+                                                    Antes de empezar, asegurate de contar con la ayuda de un adulto para realizar cualquier experimento.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-0 js-read-auto">
+                                            <div class="row ejercicio-row">
+                                                <div class="col-3">
+                                                    <div class="ejercicio-image-container mr-2 no-bg-no-border">
+                                                        <img class="img-max-4 img-full" src="assets/img/clase-3/ejercicio-1/image-56.png" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-9  flex-center-vertical">
+                                                    <div class="float-left ml-1 mt-1">
+                                                        1. Coloca agua en la cacerola, lleva aal fuego y déjala hervir.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-0 js-read-auto">
+                                            <div class="row ejercicio-row">
+                                                <div class="col-3">
+                                                    <div class="ejercicio-image-container mr-2 no-bg-no-border">
+                                                        <img class="img-max-4 img-full" src="assets/img/clase-3/ejercicio-1/image-57.png" />
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-9  flex-center-vertical">
+                                                    <div class="float-left ml-1 mt-1">
+                                                        2. Coloca los cubos de huelo en el centro de la bandeja
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-0 js-read-auto">
+                                            <div class="row ejercicio-row">
+                                                <div class="col-3">
+                                                    <div class="ejercicio-image-container mr-2 no-bg-no-border">
+                                                        <img class="img-max-4 img-full" src="assets/img/clase-3/ejercicio-1/image-58.png" />
+                                                    </div>
+                                                </div>
+                                                <div class="col-9  flex-center-vertical">
+                                                    <div class="float-left ml-1 mt-1">
+                                                        3. Coloca la bandeja a 30 cm de la cacerola con agua hirviendo, apoyado sobre cajas
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 p-0 mt-3 js-read-auto">
+                                            <div class="row ejercicio-row">
+                                                <div class="col-3">
+                                                    <div class="ejercicio-image-container mr-2 no-bg-no-border">
+                                                        <!--<img class="float-left img-full" src="assets/img/clase-3/materiales/image-53.png" />-->
+                                                    </div>
+                                                </div>
+                                                <div class="col-9  flex-center-vertical">
+                                                    <div class="float-left ml-1 mt-1">
+                                                        4. Observa lo que le pasa al agua.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scroll-up btn btn-small p-0 ml-4">
+                            <img src="assets/img/scroll-up.png" class="" />
+                        </button>
+                        <button class="scroll-down btn btn-small p-0 ml-4">
+                            <img src="assets/img/scroll-down.png" class="" />
+                        </button>
+                    </div>
+                </div>
+
+
+                <!--<div class="slide">-->
+                    <!--<div class="row pl-3 h-100">-->
+                        <!--<div class="col-4">-->
+                            <!--<div class="info-container p-4">-->
+                                <!--<div class="info-title js-read-auto">-->
+                                    <!--Materiales:-->
+                                <!--</div>-->
+                                <!--<div class="info-body">-->
+                                    <!--<p class="">-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-8 h-100">-->
+                            <!--<div class="container p-0">-->
+                                <!--<div class="w-100 h-100">-->
+                                    <!--<div class="flex-center-vertical h-100 p-0">-->
+                                        <!--<div class="info-cuento mh-100 p-2 overflow-hidden js-read-auto">-->
+                                            <!--<div class="col-12 p-2">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="ejercicio-image-container-small mr-2 no-bg-no-border">-->
+                                                        <!--<img class="float-left" src="assets/img/clase-3/materiales/image-50.png" />-->
+                                                    <!--</div>-->
+                                                    <!--<div class="float-left ml-4 mt-1">-->
+                                                        <!--1 bandeja de aluminio o metal-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-2">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="ejercicio-image-container-small mr-2 no-bg-no-border">-->
+                                                        <!--<img class="float-left" src="assets/img/clase-3/materiales/image-51.png" />-->
+                                                    <!--</div>-->
+
+                                                    <!--<div class="float-left ml-4 mt-1">-->
+                                                        <!--1 Cacerola-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-2">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="ejercicio-image-container-small mr-2 no-bg-no-border">-->
+                                                        <!--<img class="float-left" src="assets/img/clase-3/materiales/image-52.png" />-->
+                                                    <!--</div>-->
+                                                    <!--<div class="float-left ml-4 mt-1">-->
+                                                        <!--1 Calentador-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-2">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="ejercicio-image-container-small mr-2 no-bg-no-border">-->
+                                                        <!--<img class="float-left" src="assets/img/clase-3/materiales/image-53.png" />-->
+                                                    <!--</div>-->
+                                                    <!--<div class="float-left ml-4 mt-1">-->
+                                                        <!--1 Litro de agua hirviendo-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-2">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="ejercicio-image-container-small mr-2 no-bg-no-border">-->
+                                                        <!--<img class="float-left" src="assets/img/clase-3/materiales/image-54.png" />-->
+                                                    <!--</div>-->
+                                                    <!--<div class="float-left ml-4 mt-1">-->
+                                                        <!--Varios cubos de hielo-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-2">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="ejercicio-image-container-small mr-2 no-bg-no-border">-->
+                                                        <!--<img class="float-left" src="assets/img/clase-3/materiales/image-55.png" />-->
+                                                    <!--</div>-->
+                                                    <!--<div class="float-left ml-4 mt-1">-->
+                                                        <!--2 soportes para las bandejas (cajas)-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+                <!--<div class="slide">-->
+                    <!--<div class="row pl-3 h-100">-->
+                        <!--<div class="col-4">-->
+                            <!--<div class="info-container p-4 js-read-auto">-->
+                                <!--<div class="info-title">-->
+                                    <!--Pasos a seguir:-->
+                                <!--</div>-->
+                                <!--<div class="info-body">-->
+                                    <!--<p class="">-->
+                                        <!--Observación.-->
+                                    <!--</p>-->
+                                    <!--<p class="">-->
+                                        <!--Antes de empezar, asegurate de contar con la ayuda de un adulto para realizar cualquier experimento.-->
+                                    <!--</p>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!--<div class="col-8 h-100">-->
+                            <!--<div class="container p-0">-->
+                                <!--<div class="w-100 h-100">-->
+                                    <!--<div class="flex-center-vertical h-100 p-0">-->
+                                        <!--<div class="info-cuento mh-100 p-2 overflow-hidden">-->
+                                            <!--<div class="col-12 p-0">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="col-3">-->
+                                                        <!--<div class="ejercicio-image-container mr-2 no-bg-no-border">-->
+                                                            <!--<img class="img-max-4 img-full" src="assets/img/clase-3/ejercicio-1/image-56.png" />-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-9  flex-center-vertical">-->
+                                                        <!--<div class="float-left ml-1 mt-1 js-read-auto">-->
+                                                            <!--1. Coloca agua en la cacerola, lleva aal fuego y déjala hervir.-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-0">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="col-3">-->
+                                                        <!--<div class="ejercicio-image-container mr-2 no-bg-no-border">-->
+                                                            <!--<img class="img-max-4 img-full" src="assets/img/clase-3/ejercicio-1/image-57.png" />-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+
+                                                    <!--<div class="col-9  flex-center-vertical">-->
+                                                        <!--<div class="float-left ml-1 mt-1 js-read-auto">-->
+                                                           <!--2. Coloca los cubos de huelo en el centro de la bandeja-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-0">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="col-3">-->
+                                                        <!--<div class="ejercicio-image-container mr-2 no-bg-no-border">-->
+                                                            <!--<img class="img-max-4 img-full" src="assets/img/clase-3/ejercicio-1/image-58.png" />-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-9  flex-center-vertical">-->
+                                                        <!--<div class="float-left ml-1 mt-1 js-read-auto">-->
+                                                            <!--3. Coloca la bandeja a 30 cm de la cacerola con agua hirviendo, apoyado sobre cajas-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                            <!--<div class="col-12 p-0 mt-3">-->
+                                                <!--<div class="row ejercicio-row">-->
+                                                    <!--<div class="col-3">-->
+                                                        <!--<div class="ejercicio-image-container mr-2 no-bg-no-border">-->
+                                                            <!--&lt;!&ndash;<img class="float-left img-full" src="assets/img/clase-3/materiales/image-53.png" />&ndash;&gt;-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                    <!--<div class="col-9  flex-center-vertical">-->
+                                                        <!--<div class="float-left ml-1 mt-1 js-read-auto">-->
+                                                            <!--4. Observa lo que le pasa al agua.-->
+                                                        <!--</div>-->
+                                                    <!--</div>-->
+                                                <!--</div>-->
+                                            <!--</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    Glosario
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Revisa las palabras aprendidas en la clase N°3.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden">
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-3">
+                                                        <div class="ejercicio-image-container mr-2 no-bg-no-border">
+                                                            <img class="img-full" src="assets/img/clase-3/glosario/image-59.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="float-left ml-4 js-read-auto">
+                                                            <h4 class="mt-4 mb-0">Experimento :</h4>
+                                                            Prueba para comprobar una idea.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-3">
+                                                        <div class="ejercicio-image-container mr-2 no-bg-no-border">
+                                                            <img class="img-full" src="assets/img/clase-3/glosario/image-60.png" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-9">
+                                                        <div class="float-left ml-4 js-read-auto">
+                                                            <h4 class="mt-4 mb-0">Calentador :</h4>
+                                                            Aparato que calienta líquidos.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 p-2">
+                                                <div class="row ejercicio-row">
+                                                    <div class="col-3">
+                                                        <div class="ejercicio-image-container mr-2 no-bg-no-border">
+                                                            <img class="img-full" src="assets/img/clase-3/glosario/image-61.png" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-9">
+                                                        <div class="float-left ml-4 js-read-auto">
+                                                            <h4 class="mt-4 mb-0">Cacerola :</h4>
+                                                            Recipiente de cocina.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 3-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Ordena los pasos seguidos en el experimento del ciclo del agua.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-4 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container no-bg-no-border interact-ejercicio-3 js-read-auto" data-order="3">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-1/image-58.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container no-bg-no-border interact-ejercicio-3 js-read-auto" data-order="1">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-1/image-56.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container no-bg-no-border interact-ejercicio-3 js-read-auto" data-order="2">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-1/image-57.png" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container overflow-hidden js-read-auto">
+                                                        <div class="dummy-ejercicio dropzone" data-order="1">
+                                                            Paso 1
+                                                        </div>
+                                                        <img class="img-status img-correct" src="assets/img/correct.png"/>
+                                                        <img class="img-status img-incorrect" src="assets/img/incorrect.png"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container overflow-hidden js-read-auto">
+                                                        <div class="dummy-ejercicio dropzone" data-order="2">
+                                                            Paso 2
+                                                        </div>
+                                                        <img class="img-status img-correct" src="assets/img/correct.png"/>
+                                                        <img class="img-status img-incorrect" src="assets/img/incorrect.png"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 p-2 d-flex justify-content-center">
+                                                <div class="row ejercicio-row">
+                                                    <div class="ejercicio-image-container overflow-hidden js-read-auto">
+                                                        <div class="dummy-ejercicio dropzone" data-order="3">
+                                                            Paso 3
+                                                        </div>
+                                                        <img class="img-status img-correct" src="assets/img/correct.png"/>
+                                                        <img class="img-status img-incorrect" src="assets/img/incorrect.png"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 4-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Selecciona la sílaba que corresponda a cada palabra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-12 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-2/image-62.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        gusano
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div class="row flex-center-all justify-content-between js-ejercicio-parent js-read-auto">
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        ga
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gue
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gui
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        go
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                        gu
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 4-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Selecciona la sílaba que corresponda a cada palabra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-12 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-2/image-63.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        guitarra
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div class="row flex-center-all justify-content-between js-ejercicio-parent js-read-auto">
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        ga
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gue
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                        gui
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        go
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gu
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 4-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Selecciona la sílaba que corresponda a cada palabra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-12 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-2/image-64.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        gorra
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div class="row flex-center-all justify-content-between js-ejercicio-parent js-read-auto">
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        ga
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gue
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gui
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                        go
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gu
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 4-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Selecciona la sílaba que corresponda a cada palabra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row">
+                                            <div class="col-12 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-2/image-65.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        galleta
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div class="row flex-center-all justify-content-between js-ejercicio-parent js-read-auto">
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                        ga
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gue
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gui
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        go
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gu
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <div class="row pl-3 h-100">
+                        <div class="col-4">
+                            <div class="info-container p-4 js-read-auto">
+                                <div class="info-title">
+                                    <!--Actividad 4-->
+                                </div>
+                                <div class="info-body">
+                                    <p class="">
+                                        Selecciona la sílaba que corresponda a cada palabra.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 h-100">
+                            <div class="container p-0">
+                                <div class="w-100 h-100">
+                                    <div class="flex-center-vertical h-100 p-0">
+                                        <div class="info-cuento mh-100 p-2 overflow-hidden row position-relative">
+                                            <div class="col-12 p-2 d-flex">
+                                                <div class="row ejercicio-row justify-content-center w-100">
+                                                    <div class="ejercicio-image-container no-bg-no-border js-read-auto">
+                                                        <img class="float-left" src="assets/img/clase-3/ejercicio-2/image-66.png" />
+                                                    </div>
+                                                    <div class="col-12 text-center">
+                                                        juguete
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <div class="row flex-center-all justify-content-between js-ejercicio-parent js-read-auto">
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        ga
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="true">
+                                                        gue
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gui
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        go
+                                                    </button>
+                                                    <button class="ejercicio-text-container-small js-ejercicio ejercicio-btn js-read-auto" data-is-exclusive="true" data-is-right="false">
+                                                        gu
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-3" id="video-column" style="display:none;">
+                <div class="video-display">
+                    <video class="w-100 h-auto" id="video-ls">
+                        <source src="assets/video/slide-1/video-1.mp4" type="video/mp4" />
+                        <!--<source src="movie.ogg" type="video/ogg" />-->
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
