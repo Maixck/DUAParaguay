@@ -1,0 +1,17 @@
+Challenges:
+* Coordinating between a vast array of interdisciplinary groups of professionals in the private and public sector, in order to create a single product.
+  * Solution: Making a plan with the participation of multiple areas of expertise.
+  * Problem encountered: Some aspects of the plan could not be followed through becase of some inconsistencies encountered at the development stage between the plan and the implementation.
+  * Problem encountered: Problems found at the development stage could some times not be solved at implementation because previous stages where already closed.
+  * Possible solution: Participation of developers in previous (earlier) stages of product creation and the capacity to modify previous aspects of the plan or the inclusion of a feedback between development and plan making.
+
+* The creation of a single product that accommodates the diversity of capabilities present in students.
+  * Solution: For this purpose capabilities where divided into 3 ranges,
+    * Hearing
+    * Visual
+    * Cognitive
+  * The main difficulty in this aspect was accommodating in the same activity a task that could be accomplished by a student with diverse capabilities.
+    * Challenge: At the implementation level, the challenge was to enable students with diverse capabilities to interact with the book at an intuitive level, by adding functionality instead of removing content.
+    * Solution: Enabling students to activate any combination of capabilities in conjunction. IE: Cognitive and Hearing. This also address the issue of not subtracting from the experience of the book by only adding functionality.
+  * Sign language presents it's own challenge by not conforming to a 1 to 1 translation with written or spoken language, The same story can and should be presented in a different way.
+    * Solution: In some cases the sign language, audio and text can be matched, in those cases sign language student are presented with a visual feedback of where they should be focusing on the screen. In other cases the narration, text and sign language are dislodged, for example in stories.

@@ -16,7 +16,7 @@ The final objective of the project is to test the implementation of accessible b
 
 ## Technology rundown
 
-The project uses xhtml with html5 to display the main view, this also enables for easy conversion into the EPUB format. The code for most interactive features is programmed in javascript with jQuery, [interact.js](https://github.com/taye/interact.js) and [popper.js](https://github.com/popperjs/popper.js) for additional interactive functionality.
+The project uses xhtml with html5 with bootstrap 4 to display the main view, this also enables for easy conversion into the EPUB format. The code for most interactive features is programmed in javascript with jQuery, [interact.js](https://github.com/taye/interact.js) and [popper.js](https://github.com/popperjs/popper.js) for additional interactive functionality.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)

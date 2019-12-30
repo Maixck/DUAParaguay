@@ -1,0 +1,68 @@
+## Creating a slide:
+To create a new slide the only thing needed is to add a div html element with the class slide, the javascript automatically numbers the slides according to their position in the dom.
+### At code time
+```html
+    <div class="slide">
+    </div>
+    <div class="slide">
+    </div>
+```
+### At run time
+```html
+    <div class="slide" id="slide-1">
+    </div>
+    <div class="slide" id="slide-2">
+    </div>
+```
+
+## Mark a element as auto-read:
+In order to designate an html element as auto-read, add the class js-read-auto to the element to be read. The code automatically adds this element into a queue in the order they appear in the DOM.
+```html
+    <div class="js-read-auto">
+        Read my text.
+    </div>
+```
+## Audio file storage:
+In order to read an element you have to specify which audio file should be played, this is done by storing the audio in a particular way. `/assets/audio/slide-{slide number}/audio-{audio number}.{audio extension}`
+### Example
+```html
+    <div class="slide" id="slide-1">
+        <div class="js-read-auto">
+            Read my text.
+        </div>
+    </div>
+```
+#### The audio should be stored at `/assets/audio/slide-1/audio-1.mp3`
+#### Video for this read-block should be stored in a similar way in `/assets/video/slide-1/video-1.mp4`
+
+## Making an exercise:
+To make an exercise at lest 2 classes should be present. `js-ejercicio-parent` which indicates which element is the parent of all the exercise elements and `js-ejercicio` that is an instance of an exercise.
+```html
+    <div class="js-ejercicio-parent">
+        <button class="js-ejercicio" data-is-right="true">
+            This is the right answer
+        </button>
+        <button class="js-ejercicio" data-is-right="false">
+            This is a wrong answer
+        </button>
+        <button class="js-ejercicio" data-is-right="false">
+            This is a another wrong answer
+        </button>
+    </div>
+```
+#### When a button is pushed a sound is played and a class is added to indicate that it was either a success or a wrong answer. Those are `ejercicio-correct` and `ejercicio-incorrect`
+
+
+## Controls:
+The following image enumerates the controls:
+![](/Maixck/DUAParaguay/blob/master/assets/img/controls.jpg)
+
+1. Turn sign language mode on/off.
+2. Turn simple language mode on/off.
+3. Turn audio mode on/off.
+4. Change slide to previous slide.
+5. Play previous audio/video.
+6. Play/Pause video/audio.
+7. Play next audio/video.
+8. Change slide to next slide.
+9. Go to first slide.

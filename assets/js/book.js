@@ -13,7 +13,6 @@ var global_scrolling = false;
 var animation_speed = 400;
 var is_play = false;
 
-
 var global_currentAudio = 1;
 var audio_element = false;
 var global_maxAudio = 0;
@@ -22,12 +21,16 @@ var audio_queue = [];
 
 var contentOffset = 0;
 
+//Memory exercise flag.
 var memoria = false;
+
 var audio_assets_dir = 'assets/audio/';
 var video_assets_dir = 'assets/video/';
+
 var audio_extension = '.mp3';
 var video_extension = '.mp4';
 
+// Slide that have text and video independent of each other,
 var text_slides = [4,10];
 
 
@@ -783,6 +786,6 @@ $(function() {
     // START UP
     startUp();
 
-    // Start audio at startup
+    // Start audio at startup if on.
     playNextAudio();
 });
